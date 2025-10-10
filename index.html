@@ -7,11 +7,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="mx-5 my-3 font-[roboto]">
-    <h1 class="text-gray-900 font-bold text-6xl rounded shadow-md bg-sky-200 text-center py-3 ">Título</h1>
-    <h2 class="text-gray-800 font-medium text-4xl pt-[1rem] pb-[1rem] text-center rounded shadow ">Subtítulo</h2>
-    <p class="text-justify text-gray-600 pb-[2em]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit, rem laborum molestias culpa neque exercitationem consequuntur! Vitae, sequi? Incidunt perferendis similique consequatur eos vel et error fuga dolor debitis.</p>
-    <p class="text-justify text-gray-600 rounded-sm shadow-xl/20 bg-green-100 p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex quos quibusdam, iusto rem laudantium reiciendis tenetur eius doloribus iste nemo! Sunt aspernatur quidem laudantium.</p>
+<!-- Classes Universais -->
+<body class="mx-5 my-3 text-center font-[roboto] bg-gray-600 text-base tracking-normal leading-6">
+    <!-- Caixa de Conteúdo com classes expecíficas-->
+    <div class="rounded-xl shadow-xl/20 p-[1rem] bg-gray-50 max-w-lg mx-auto">
+        <h1 class="text-gray-900 font-bold text-6xl">Título</h1>
+        <h2 class="text-gray-900 font-medium text-4xl py-[1rem]">Subtítulo</h2>
+        <p class="text-justify text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit, rem laborum molestias culpa neque exercitationem consequuntur! Vitae, sequi? Incidunt perferendis similique consequatur eos vel et error fuga dolor debitis.</p>
+        <p class="text-justify text-gray-600 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex quos quibusdam, iusto rem laudantium reiciendis tenetur eius doloribus iste nemo! Sunt aspernatur quidem laudantium.</p>
+    </div>
+
+    <!-- CONSIDERAÇÕES SOBRE O CÓDIGO E AS CLASSES TAILWIND UTILIZADAS
+            Achei que foi uma boa forma de treinar os conceitos primários de classes Tailwind, mostrando sua versatiliade em relação ao CSS externo e como elas podem melhorar a criação de sites com o uso de frameworks.
+            Decidi utilizar as mesmas cores promostas na atividade e utilizei também uma outra unidade de medida, o rem, para deixar o código com diferentes unidades.-->
     
 </body>
 </html>
