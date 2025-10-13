@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista 2 - Hierarquia/Tipografia</title>
+    <title>Lista 3 - Micro Layouts e Alinhamento Consistente</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <!-- Classes Universais -->
-<body class="mx-5 my-3 text-center font-[roboto] bg-gray-600 text-base tracking-normal leading-6">
-    <!-- Caixa de Conteúdo com classes expecíficas-->
-    <div class="rounded-xl shadow-xl/20 p-[1rem] bg-gray-50 max-w-lg mx-auto">
-        <h1 class="text-gray-900 font-bold text-6xl">Título</h1>
-        <h2 class="text-gray-900 font-medium text-4xl py-[1rem]">Subtítulo</h2>
-        <p class="text-justify text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sit, rem laborum molestias culpa neque exercitationem consequuntur! Vitae, sequi? Incidunt perferendis similique consequatur eos vel et error fuga dolor debitis.</p>
-        <p class="text-justify text-gray-600 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex quos quibusdam, iusto rem laudantium reiciendis tenetur eius doloribus iste nemo! Sunt aspernatur quidem laudantium.</p>
-    </div>
-
-    <!-- CONSIDERAÇÕES SOBRE O CÓDIGO E AS CLASSES TAILWIND UTILIZADAS
-            Achei que foi uma boa forma de treinar os conceitos primários de classes Tailwind, mostrando sua versatiliade em relação ao CSS externo e como elas podem melhorar a criação de sites com o uso de frameworks.
-            Decidi utilizar as mesmas cores promostas na atividade e utilizei também uma outra unidade de medida, o rem, para deixar o código com diferentes unidades.-->
+<body class="mx-5 my-3 text-center font-[roboto] bg-slate-950 text-base tracking-normal leading-6 text-lime-100" >
+    
+    <section class="flex gap-10 w-5xl m-auto">
+        <div class="justify-start w-1/2">
+            <h1 class="">
+                Título
+            </h1>
+            <h3 class="">
+                Subtítulo
+            </h3>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illum praesentium ab aliquid asperiores saepe, temporibus, beatae iste quod non et voluptates facere nam nihil error laborum repudiandae placeat nobis aut esse nulla explicabo! Consequatur eaque facilis assumenda porro illo?
+            </p>
+        </div>
+        <div class="justify-end w-1/2">
+            <img src="https://picsum.photos/400" alt="placeholder">
+        </div>
+    </section>
     
 </body>
 </html>
