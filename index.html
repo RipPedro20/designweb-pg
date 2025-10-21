@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Landinpage - 1.0</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Landinpage - InfoWebeti</title>
 </head>
-<body>
-    
-    <header class="container mx-auto">
-        <figure><img src="img/logo.svg" alt="Logo de Infoweb by turma Infowebeti"></figure>
-        <nav>
-            <menu>
-                <li><a href="#sobre"></a>Sobre</li>
-                <li><a href="#professores">Professores</a></li>
-                <li><a href="#alunos"></a>Alunos</li>
-                <li><a href="#projetos"></a>Projetos</li>
-                <li"><a href="#documentos"></a>Documentos</li>
-            </menu>
-        </nav>
-    </header>
+<body class="font-[Inter]">
 
-    <main class="container mx-auto">
+  <header class="container max-w-7xl mx-auto flex justify-between py-8 items-center">
+    <figure>
+      <img src="assets/img/logo.svg" alt="Logo de InfoWeb by turma InfoWebeti">
+    </figure>
+    <nav>
+      <menu class="flex gap-12 text-gray-500">
+        <li><a class="hover:bg-sky-700 hover:text-white  hover:py-4 hover:px-4 hover:rounded-md hover:text-white hover:font-semibold" href="#sobre">Sobre</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white  hover:py-4 hover:px-4 hover:rounded-md hover:text-white hover:font-semibold" href="#professores">Professores</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white  hover:py-4 hover:px-4 hover:rounded-md hover:text-white hover:font-semibold" href="#alunos">Alunos</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white  hover:py-4 hover:px-4 hover:rounded-md hover:text-white hover:font-semibold" href="#projetos">Projetos</a></li>
+        <li><a class="hover:bg-sky-700 hover:text-white  hover:py-4 hover:px-4 hover:rounded-md hover:text-white hover:font-semibold hover:py-4 hover:px-4 hover:rounded-md hover:text-white hover:font-semibold" href="#documentos">Documentos</a></li>
+      </menu>
+    </nav>
+  </header>
+  <main class="container max-w-7xl mx-auto">
 
-        <!-- hero -->
-        <section class="p-10 bg-gray-500 rounded-lg">
-            <h1>Depois de muita espera, ela finalmente chegou!</h1>
-            <p>O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
-            
-            <div class="center center">
-                <a href="#" class="">Ser feliz agora</a>
-                <a href="#" class="">Ficar triste</a>
-            </div>
+    <!-- hero -->
+    <section class="flex items-center flex-col p-20 bg-gray-100 rounded-lg">
+      <h1 class="text-[2.75rem] max-w-140 text-center font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
+      <p class="mt-5 mb-10 max-w-140 text-center">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
 
-        </section>
+      <div class="flex justify-center gap-8">
+        <a href="https://forms.gle/ig4Bj5V7hbkKdhDz5" class="bg-sky-700 text-white py-4 px-8 rounded-md border-[#02467A] border-2">Ficar feliz!!</a>
+        <a href="#" class="bg-sky-700 text-white py-4 px-8 rounded-md border-[#02467A] border-2">Ficar triste</a>
+      </div>
+    </section>
 
-        <!-- logos -->
-        <section>
-            <ul class="flex">
-                <li><img src="img/logo1.jpg" alt=""></li>
-                <li><img src="img/logo2.jpg" alt=""></li>
-                <li><img src="img/logo3.jpg" alt=""></li>
-                <li><img src="img/logo4.jpg" alt=""></li>
-                <li><img src="img/logo5.jpg" alt=""></li>
-                <li><img src="img/logo6.jpg" alt=""></li>
-                <li><img src="img/logo7.jpg" alt=""></li>
-            </ul>
-        </section>
+    <!-- logos -->
+     <section>
+      <ul class="flex justify-between mt-15">
+        <li><img src="assets/img/logo1.png" alt=""></li>
+        <li><img src="assets/img/logo2.png" alt=""></li>
+        <li><img src="assets/img/logo3.png" alt=""></li>
+        <li><img src="assets/img/logo4.png" alt=""></li>
+        <li><img src="assets/img/logo5.png" alt=""></li>
+        <li><img src="assets/img/logo6.png" alt=""></li>
+        <li><img src="assets/img/logo7.png" alt=""></li>
+      </ul>
+     </section>
+  
+    <!-- destaques -->
+     <section class="flex gap-20 my-20 text-gray-500 justify-between">
+      <div class="flex gap-4 items-baseline max-w-1/3">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>Ela é bonita</strong>
+          <p>Além de linda, ela é a mais top.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-4 items-baseline max-w-1/3">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>O azul destaque</strong>
+          <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-baseline max-w-1/3">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>Webeti</strong>
+          <p>O nosso mascote é um gênio da informática.</p>
+        </div>
+      </div>
+     </section>
 
-        <!-- destaques -->
-        <section>
-            <div>
-                <strong>Ela é bonita</strong>
-                <span>Além de linda, ela é a mais top.</span>
-            </div>
-            <div>
-                <strong>O azul destaque</strong>
-                <span>O azul royal ficou para trás. Contemple o novo azul esmeralda.</span>
-            </div>
-            <div>
-                <strong>Webeti</strong>
-                <span>O nosso mascote é um gênio da informática.</span>
-            </div>
-        </section>
-        <!-- mockup da camiseta de turma -->
-        <figure><img src="img/mockup.svg" alt=""></figure>
-        <h2>Alunos que já compraram.</h2>
-        <p>Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+     <!-- mockup da camiseta da turma -->
+     <figure><img src="assets/img/mockup.png" class="w-full" alt="Imagem destaque da camiseta"></figure>
+     <h2 class="mx-auto text-center my-10 font-semibold text-5xl max-w-160">Alunos que já compraram.</h2>
+     <p class="mx-auto text-center max-w-160 text-xl text-gray-500 font-normal">Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
 
-        <!-- metricas -->
-         <section class="grid grid-cols-3 gap-10 text-center my-">
-            <div>
-                <h3 class="text-5xl">234+</h3>
-                <span>Alunos Felizes</span>
-            </div>
-            <div>
-                <h3 class="text-5xl">38,903+</h3>
-                <span>Alunos adquirindo</span>
-            </div>
-            <div>
-                <h3 class="text-5xl">154+</h3>
-                <span>Alunos tristes</span>
-            </div>
-         </section>
-
-    </main>
-
+     <!-- métricas -->
+     <section class="grid grid-cols-3 gap-4 text-center my-20">
+      <div>
+        <h3 class="text-5xl font-semibold pb-2">243+</h3>
+        <span class="text-xl text-gray-500 font-normal">Alunos felizes</span>
+      </div>
+      <div>
+        <h3 class="text-5xl font-semibold pb-2">38.903+</h3>
+        <span class="text-xl text-gray-500 font-normal">Alunos adquirindo</span>
+      </div>
+      <div>
+        <h3 class="text-5xl font-semibold pb-2">154+</h3>
+        <span class="text-xl text-gray-500 font-normal">Alunos tristes</span>
+      </div>
+     </section>
+  </main>
+  
 </body>
 </html>
