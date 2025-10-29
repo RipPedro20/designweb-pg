@@ -1,184 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Pessoal - Atualizado com Tailwind</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dashboard - Version 1.0</title>
 </head>
-
-<body class="|Design>| bg-[#080808] text-[#9C9C9C] font-[IBM_Plex_Mono] 
-    |Layout>| m-2 
-    |Responsive>| max-md:mb-[72px] max-md:m-0 ">
-
-    <header class="|Layout>| mb-[64px]">
-
-        <nav class="|Design>| box-border bg-[#1B1B1B] h-[74px] pl-[100px] pr-[100px] rounded-b-[6px] 
-            |Layout>| flex items-center justify-between mx-auto max-w-[1200px] 
-            |Responsive>| max-md:px-[24px]">
-
-            <ul class="|Design>| list-none 
-                |Layout>| flex p-[0px] m-[0px] gap-[32px] 
-                |Responsive>| max-md:hidden">
-                
-                <li>
-                    <a href="#" class="text-[14px] text-[#9C9C9C] font-normal no-underline">Estudos de caso</a>
-                </li>
-
-                <li>
-                    <a href="#" class="text-[14px] text-[#9C9C9C] font-normal no-underline">Trabalhos</a>
-                </li>
- 
-                <li>
-                    <a href="#" class="text-[14px] text-[#9C9C9C] font-normal no-underline">Entre em contato</a>
-                </li>
-            </ul>
-            <ul class="|Design>| list-none 
-                |Layout>| flex p-0 m-0 gap-[32px]">
-                <li>
-                    <a href="#" class="text-[#9C9C9C] text-[20px]">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
+<body class="|Design| font-[Sora]">
     
-                    <li>
-                    <a href="#" class="text-[#9C9C9C] text-[20px]">
-                        <i class="fa-brands fa-behance"></i>
-                    </a>
-                </li>
-   
-                <li>
-                    <a href="#" class="text-[#9C9C9C] text-[20px]">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
-                    
-            </ul>
-            <div class="|Design>| hidden gap-[16px] 
-                |Responsive>| max-md:flex">
+    <main class="|Layout| container max-x-7xl pl-[40px] py-[40px]">
 
-                <button class="|Design>| border-hidden bg-none text-[20px] text-[#9C9C9C]">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+        <figure>
+            <img src="img/propaganda.png" alt="Propaganda">
+        </figure>
 
-                <p class="|Design>| text-[14px] text-[#9C9C9C] font-normal 
-                    |Layout>| my-[10px] leading-[1.6]">Menu</p>
-            </div>
-        </nav>
-    </header>
+        <section class="|Layout| my-[40px] ">
 
-    <main>
+            <h2 class="|Design| font-bold text-xl">Compre pontos e distribua como quiser</h2>
+            <div class="|Layout| mt-[24px] flex gap-x-[32px]">
 
-        <section class="|Layout>| flex items-center justify-between mx-auto mb-[64px] gap-[32px] max-w-[1200px] 
-            |Responsive>| max-md:max-w-full max-md:flex-col-reverse">
-
-            <div class="|Design>| w-[568px] 
-                |Layout>| flex justify-center flex-col gap-[32px] max-w-full 
-                |Responsive>| max-md:w-[400]">
-
-                <div>
-                    <h1 class="|Design>| text-[#FFFFFF] font-[Raleway] text-[44px] font-extrabold 
-                        |Layout>| my-[10px] leading-none">Pedro Gabriel</h1>
-
-                    <h3 class="|Design>| text-[#FFFFFF] font-[Raleway] text-[24px] font-extralight 
-                        |Layout>| my-[10px] leading-none">Estudante / Dev Front-end</h3>
-
-                    <p class="|Design>| text-[14px] text-[#9C9C9C] font-normal 
-                        |Layout>| my-[10px] leading-[1.6]">
-                        Sou um jovem programador que busca aprender cada vez mais, sempre buscando superar as dificuldades. Possuo conhecimento básico em HTML, CSS e Java Script, e um mais avançado em manutenção de hardwares, além do inglês intermediário/avançado que adquiri ao longo da vida.
-                    </p>
+                <div class="|Design| border-1 border-stone-300 rounded-lg
+                |Layout| grid p-[24px] max-w-xs grid-rows-2 
+                |Animations| transition delay-50 duration-350 ease-in-out hover:scale-112 cursor-pointer">
+                    <img src="img/appdesign.png" alt="App Design">
+                    <p class="|Design| text-sm text-stone-500 
+                    |Layout| my-[16px]">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem</p>
+                    <strong class="|Layout| flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                    <p class="|Design| text-sm text-stone-500">5 créditos por R$10.000,00</p>
                 </div>
-                <button class="|Design>| font-[Raleway] text-[16px] text-[#FFFFFF] font-bold box-border px-[64px] py-[1px] h-[64px] max-w-[360px] bg-[#3F8E00] border-[#62BA1B] border-2 border-solid rounded-[4px] 
-                    |Layout>| my-[10px] leading-[1.6] tracking-normal
-                    |Responsive>| max-md:max-w-full">
-                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
-                </button>
+
+                <div class="|Design| border-1 border-stone-300 rounded-lg 
+                |Layout| grid p-[24px] max-w-xs grid-rows-2 
+                |Animations| transition delay-50 duration-350 ease-in-out hover:scale-112 cursor-pointer">
+                    <img src="img/pdvsystems.png" alt="PDV Systems">
+                    <p class="|Design| text-sm text-stone-500 
+                    |Layout| my-[16px]">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
+                    <strong class="|Layout| flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                    <p class="|Design| text-sm text-stone-500">21 créditos por R$120.000,00</p>   
+                </div>
+
+                <div class="|Design| border-1 border-stone-300 rounded-lg 
+                |Layout| grid p-[24px] max-w-xs grid-rows-2 
+                |Animations| delay-50 duration-350 ease-in-out hover:scale-112 cursor-pointer">
+                    <img src="img/wordpress.png" alt="Wordpress Sites">
+                    <p class="|Design| text-sm text-stone-500 
+                    |Layout| my-[16px]">Descontos cumulativos para projetos em Wordpress para 2025.</p>
+                    <strong class="|Layout| flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                    <p class="|Design| text-sm text-stone-500">21 créditos por R$12.000,00</p>
+                </div>
             </div>
-            <figure class="|Design>| m-[0px]">
 
-                <img class="w-[350px] h-[350px] rounded-full object-cover" src="img/pedrofil.png" alt="Foto de Pedro Gabriel">
-
-            </figure>
-        </section>
-
-        <section class="|Layout>| flex flex-col mx-auto box-border max-w-[1200px] 
-            |Responsive>| max-md:max-w-[350px] max-md:justify-start">
-
-            <h5 class="text-[14px] mb-[22px] font-bold">Trabalhou em:</h5>
-
-            <ul class="|Design>| list-none 
-                |Layout>| flex m-[0px] p-[0px] justify-between 
-                |Responsive>| max-md:gap-[24px] max-md:overflow-x-auto">
-
-                <li class="flex justify-center w-[170px] h-[60px] box-border">
-                    <img src="img/img-job-1.svg" alt="logo do clickup ">
-                </li>
-
-                <li class="flex justify-center w-[170px] h-[60px] box-border max-md:min-w-[160px]">
-                    <img src="img/img-job-2.svg" alt="logo do dropbox">
-                </li>
-
-                <li class="flex justify-center w-[170px] h-[60px] box-border max-md:min-w-[160px]">
-                    <img src="img/img-job-3.svg" alt="logo do paychex">
-                </li>
-                
-                <li class="flex justify-center w-[170px] h-[60px] box-border max-md:min-w-[160px]">
-                    <img src="img/img-job-4.svg" alt="logo do elastic">
-                </li>
-
-                <li class="flex justify-center w-[170px] h-[60px] box-border max-md:min-w-[160px]">
-                    
-                    <img src="img/img-job-5.svg" alt="logo do stripe">
-                </li>
-            </ul>
         </section>
 
     </main>
+
+    <footer class="|Design| bg-white border-t-1 border-stone-200 
+    |Layout| container max-w-full py-[16px] flex justify-end pr-14 fixed bottom-0">
+        <img src="img/aglogo.svg" alt="Logo da Agência Web">
+    </footer>
+
 </body>
 </html>
-
-
-<!--  Design Variables
-
-$font-titulo : "Raleway", sans-serif;
-$font-texto : "IBM Plex Mono", monospace;
-
-$cor-bg-body : #080808;
-$cor-bg-header : #1B1B1B;
-$cor-text-body : #9C9C9C;
-$cor-bg-button : #3F8E00;
-$cor-border-button : #62BA1B;
-$cor-text-title : #FFFFFF;
-
--->
-
-<!-- Layout/Responsive Variables
-
-$break-desktop: 1200px;
-$break-mobile: 768px;
-
--->
-
-<!-- Classes Comuns
-
-.container = |Layout>| flex itens-center justify-between mx-auto max-w-[1200px]
-
-.heading-1/2 =|Design>| text-[#FFFFFF] font-[Raleway] |Layout>| my-[10px] leading-none
-
-.head1 = |Design>| text-[44px] font-extrabold
-
-.head2 = |Design>| text-[24px] font-extralight
-
-.body-1/2 = my-[10px] leading-[1.6]
-
-.bd1 = |Design>| text-[16px] text-[#FFFFFF] font-bold
-
-.bd2 = |Design>| text-[14px] text-[#9C9C9C] font-normal
-
-.lista-sem-estilo = list-none
-
-.link-sem-estilo = no-underline
-
--->
