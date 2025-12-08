@@ -1,0 +1,31 @@
+[data-theme="ifrn-webeti"]{
+    color-scheme: "dark";
+  --color-base-100: #005889;
+  --color-base-200: #193ab7;
+  --color-base-300: #135bf9;
+  --color-base-content: #f7f9fa;
+  --color-primary: #00d0ef;
+  --color-primary-content: #162455;
+  --color-secondary: #2a7eff;
+  --color-secondary-content: #edf1fe;
+  --color-accent: #ccf8fc;
+  --color-accent-content: #084d49;
+  --color-neutral: #135bf9;
+  --color-neutral-content: #eff6ff;
+  --color-info: #2a7eff;
+  --color-info-content: #1c184b;
+  --color-success: #00d390;
+  --color-success-content: #004c39;
+  --color-warning: #fcb700;
+  --color-warning-content: #793205;
+  --color-error: #ff627d;
+  --color-error-content: #4d0218;
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
