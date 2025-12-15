@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FRAMEWORKS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body >
+    <!-- Atividade 14 - Estado: { liked: false }. Se false, mostra "🤍". Se true, mostra "❤️". O clique alterna o estado. -->
+    
+    <div class="flex grid justify-center pt-15 m-5 pb-15 border border-black font-bold text-2xl text-blue-500" x-data="{liked : false}">
+        <button class="btn btn-neutral" @click="liked = !liked">Like 👍</button>
+        <span class="text-md text-gray-600" x-text="liked ? '❤️ Deu like :)' : '🤍 Não deu like :('  "></span>
+    </div>
+    
+</body>
+</html>
