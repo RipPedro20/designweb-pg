@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>O espelho digital - X-model</title>
     <!-- FRAMEWORKS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body >
-    <!-- Atividade 1 - Declare um estado com { mensagem: 'Alpine Rocks!' }. Exiba esse texto dentro de um <h1> usando a diretiva correta. -->
+<body>
+    
+    <div class="grid max-w-100 mx-auto mt-5 border rounded p-5 text-lg" x-data="{nome : '' }">
+        <input class="text-gray-400" type="text" placeholder="Digite seu nome" x-model="nome">
 
-    <div class="flex justify-center pt-15 border" x-data="{mensagem: 'Alpine Rocks!'}">
-        <h1 class="font-bold text-2xl text-red-500" x-text="mensagem">
-        </h1>
+        <span>
+            Olá 
+            <span class="text-purple-500 font-bold" x-text="nome.toUpperCase() || 'Anônimo'">
+                
+            </span>
+        </span>
     </div>
+    
 </body>
 </html>
