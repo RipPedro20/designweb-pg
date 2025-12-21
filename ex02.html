@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A anatomia do Loop - X-for</title>
+    <!-- FRAMEWORKS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    <div class="grid max-w-100 mx-auto mt-5 border rounded p-5 text-lg shadow-lg" x-data="{brawler : ['Gus'], novoBrawler : ''}">
+        <input type="text" placeholder="Adicione um brawler do jogo Brawl Stars" x-model="novoBrawler" @keydown.enter="brawler.push(novoBrawler); novoItem = ''">
+        <ul>
+            <!-- O Molde -->
+            <template x-for="item in brawler" :key="brawler.id">
+                
+                <!-- O que será repetido -->
+                <li>
+                    <span x-text="item"></span> - 
+                    <span x-text="item"></span>
+                </li>
+          
+            </template>
+          </ul>
+    </div>
+    
+</body>
+</html>
